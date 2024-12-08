@@ -1,4 +1,4 @@
-.header {
+.header1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,7 @@
     z-index: 1000;
 }
 
-.header img {
+.header1 img {
     height: 50px;
 }
 

@@ -12,7 +12,7 @@ const AmbulanceService = () => {
           <img
             alt="Ambulance on the road"
             height="200"
-            src="https://storage.googleapis.com/a1aa/image/L0DEuLy338q2HxgWGYrV5yxKKgyit8qmeo0w9IsTTr5jfk4TA.jpg"
+            src=".\images\Ambulance1.jpeg"
             width="300"
           />
           <div className="card-content">
@@ -25,7 +25,7 @@ const AmbulanceService = () => {
           <img
             alt="Ambulance at a hospital"
             height="200"
-            src="https://storage.googleapis.com/a1aa/image/LkQl1pgrsr6vAd9JnldmMl0C6sqvd94fTUbYMW9iGEUjfk4TA.jpg"
+            src=".\images\Ambulance2.jpeg"
             width="300"
           />
           <div className="card-content">
@@ -38,7 +38,7 @@ const AmbulanceService = () => {
           <img
             alt="Ambulance in a city"
             height="200"
-            src="https://storage.googleapis.com/a1aa/image/Ycr6Z3rX9tKPPJGlKhSHnV3MR9dNuISUIbnIDt6xaSjwPJeJA.jpg"
+            src=".\images\Ambulance3.jpeg"
             width="300"
           />
           <div className="card-content">

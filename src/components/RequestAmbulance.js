@@ -3,7 +3,7 @@ import "../style/RequestAmbulance.css"
 
 const RequestAmbulance = () => {
   return (
-    <div className="container">
+    <div className="container1">
       <div className="content">
         <h1>Request an Ambulance Cab</h1>
         <p>Quick and reliable ambulance service for your health emergencies.</p>
@@ -21,7 +21,7 @@ const RequestAmbulance = () => {
       </div>
       <div className="image-container">
         <img
-          src="https://storage.googleapis.com/a1aa/image/JwRiHTtW18ppOpwewbEG6FrZwBWieEeHXnp7Tpe9csLC2RiPB.jpg"
+          src="./images/Map.jpg"
           alt="Google Map"
         />
       </div>

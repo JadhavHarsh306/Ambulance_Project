@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright">
-                &copy; 2023 Ambulance Cab Service. All rights reserved.
+                &copy; 2025 Ambulance Cab Service. All rights reserved.
             </div>
         </div>
     );

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import RequestAmbulance from './components/RequestAmbulance';
 import AmbulanceService from './components/AmbulanceService';
 import AmbulanceDriver from './components/AmbulanceDriver';
+import FAQs from './components/FAQs';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <RequestAmbulance/>
             <AmbulanceService/>
             <AmbulanceDriver/>
+            <FAQs/>
             <Footer/>
         </div>
     );

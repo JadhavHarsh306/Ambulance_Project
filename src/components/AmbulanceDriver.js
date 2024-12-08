@@ -15,9 +15,9 @@ const AmbulanceDriver = () => {
       </div>
       <div className="business-image">
         <img
-          alt="Person coordinating ambulance service on a computer"
+          alt="Ambulance Driver"
           height="200"
-          src="https://storage.googleapis.com/a1aa/image/wGRDFZHekPWSGytGzriGAekxAFSklJCXJflQNxalUmwJeTiPB.jpg"
+          src="./images/Driver.jpeg"
           width="300"
         />
       </div>

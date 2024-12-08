@@ -1,7 +1,6 @@
 /* Container and overall page styling */
 .container {
     padding: 40px;
-    flex-direction: column;
   }
   
   .header {
@@ -18,8 +17,6 @@
   .card-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    /* flex-direction: column-reverse; */
   }
   
   /* Individual card styling */
@@ -66,7 +63,7 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s ease; /* Added hover transition */
+    /* transition: background-color 0.3s ease;  */
   }
   
   .card-content button:hover {

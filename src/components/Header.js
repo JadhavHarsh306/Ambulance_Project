@@ -4,12 +4,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Header = () => {
     return (
-        <header className="header">
+        <header className="header1">
             <img
                 alt="RED.Health Logo"
                 height="50"
-                src="https://storage.googleapis.com/a1aa/image/3sB2Toon9ooSGJm6tYb2tlJQk6ublbDQOeipAo4lFwOYBS8JA.jpg"
-                width="150"
+                src=".\images\icon.jpeg"
+                width="70"
             />
             <nav className="nav">
                 <a href="#" className="nav-link">ABOUT US</a>
