@@ -31,6 +31,7 @@ const Header = () => {
                 width="70"
             />
             <nav className="nav">
+                <h2>Ambulance Cab Service</h2>
                 <a href="#" className="nav-link">ABOUT US</a>
                 <a href="#" className="nav-link">HELP</a>
                 <a href="login" className="nav-link" onClick={OpenPopup}>LOG IN</a>

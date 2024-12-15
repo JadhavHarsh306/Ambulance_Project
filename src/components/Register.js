@@ -17,11 +17,11 @@ const Register = ({isActive,notActive}) => {
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
-          <label>First Name:</label>
+          <label>Name:</label>
           <input type="text" />
         </div>
         <div className="input-group">
-          <label>Last Name:</label>
+          <label>UserName:</label>
           <input type="text" />
         </div>
         <div className="input-group">
@@ -38,18 +38,6 @@ const Register = ({isActive,notActive}) => {
         </div>
         <div className="input-group">
           <label>Phone Number:</label>
-          <input type="text" />
-        </div>
-        <div className="input-group">
-          <label>Address:</label>
-          <input type="text" />
-        </div>
-        <div className="input-group">
-          <label>Pin Code:</label>
-          <input type="text" />
-        </div>
-        <div className="input-group">
-          <label>Adhar Card Number:</label>
           <input type="text" />
         </div>
         <button type="submit" onClick={notActive}>Submit</button>

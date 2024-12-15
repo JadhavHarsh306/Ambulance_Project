@@ -30,6 +30,7 @@
 }
 
 .business-content button {
+  width: 120px;
   background: #fff;
   color: #000;
   border: none;

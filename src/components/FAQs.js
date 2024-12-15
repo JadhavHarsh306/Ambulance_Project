@@ -28,11 +28,11 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQs = () => {
     const faqData = [
-        { question: 'Can I have a lost item delivered to me?', answer: 'Yes, you can have a lost item delivered to you by contacting our support team.' },
-        { question: 'Can I rent a car using Uber?', answer: 'Yes, Uber offers car rental services in select locations.' },
-        { question: 'Can I request a ride that picks up friends in different locations?', answer: 'Yes, you can request a ride that picks up friends in different locations using the Uber app.' },
-        { question: 'Can I request a taxi on Uber?', answer: 'Yes, you can request a taxi on Uber in select cities where the service is available.' },
-        { question: 'Is there an Uber ride option for 5 people?', answer: 'Yes, Uber offers ride options for larger groups, including UberXL and UberSUV.' },
+        { question: ' How do I book an ambulance cab?', answer: ' You can book via our website, mobile app, or by calling our 24/7 helpline.' },
+        { question: 'Are your ambulance cabs equipped for emergencies?', answer: 'Yes, all vehicles have basic medical equipment and trained personal.' },
+        { question: ' How long will it take for the ambulance cab to arrive?', answer: 'Arrival times vary based on location but typically range from 10–30 minutes.' },
+        { question: ' Do you provide intercity ambulance services?', answer: 'Yes, we offer both local and long-distance patient transport.' },
+        { question: ' What payment options do you accept?', answer: 'We accept UPI and credit/debit card payments.' },
     ];
 
     return (
