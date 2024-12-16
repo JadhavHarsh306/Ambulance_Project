@@ -38,10 +38,10 @@ const Footer = () => {
             </div>
             <div className="footer-bottom">
                 <div className="social-icons">
-                    <a href="#"><i className="fab fa-facebook-f"></i></a>
-                    <a href="#"><i className="fab fa-youtube"></i></a>
-                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i className="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/"><i className="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/harsh-dilip-jadhav-208a96251/"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a>
                 </div>
                 <div className="language-location">
                     <i className="fas fa-globe"></i> <span>English</span>
