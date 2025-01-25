@@ -1,60 +1,35 @@
-import React, { useState } from 'react';
-import '../style/Login.css';  // Make sure the styles are in place
-import Register from './Register';
-import ForgetPassword from './ForgetPassword';
+import React from 'react';
+import '../style/Login.css'; // Assuming you will create a separate CSS file for styles
+import { Link } from 'react-router-dom';
 
-const Login = ({ isOpen, closePopup }) => {
-  const [reg,setreg]=useState(false);
-  const [forg,setforg]=useState(false);
-  if (!isOpen) {
-    return null;  // If isOpen is false, do not render the popup
-  }
-  const refresh=(event)=>{
-    event.preventDefault();
-  }
-
-  const OpenRegister=(event)=>{
-    event.preventDefault();
-    setreg(true);
-  }
-  const off=()=>{
-    setreg(false);
-  }
-  const forget=(event)=>{
-    event.preventDefault();
-    setforg(true);
-  }
-  const nofrog=()=>{
-    setforg(false);
-  } 
-
-  return (
-    <div className="popup-overlay">
-      <div className="login-container">
-        <h2>Login</h2>
-        <form onSubmit={refresh}>
-          <div className="input-group">
-            <label>Username:</label>
-            <input type="text" placeholder="Enter your username" />
-          </div>
-          <div className="input-group">
-            <label>Password:</label>
-            <input type="password" placeholder="Enter your password" />
-          </div>
-          <div className="forgot-password">
-            <a href="#" onClick={forget}>Forgot Password?</a>
-            <ForgetPassword isVisible={forg} onClose={nofrog} />
-          </div>
-          <div className="register-link">
-            <p>Not a user yet?</p>
-            <a href="#" onClick={OpenRegister}>Register Here</a>
-           <Register isActive={reg} notActive={off}/>
-          </div>
-          <button onClick={closePopup} className='btn'>Login In</button>
-        </form>
-      </div>
-    </div>
-  );
+const Login = () => {
+    return (
+        <div className="lg-container">
+            <div className="login-container">
+                <div className="left">
+                    <img 
+                        alt="Ambulance" 
+                        height="400" 
+                        src="https://storage.googleapis.com/a1aa/image/SEWBfs9xPF1DfEwin1P2h0YDRAz37wbaOgD4kE8cA4xkEvIUA.jpg" 
+                        width="400" 
+                    />
+                </div>
+                <div className="right">
+                    <h2>LOGIN</h2>
+                    <form>
+                        <input placeholder="Email" type="email" />
+                        <input placeholder="Password" type="password" />
+                        <div className="forgot-password">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit">Log In</button>
+                    </form>
+                    <div className="signup">
+                        Don't have an account? <Link to="/register"> <a>Signup</a> </Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 };
-
 export default Login;

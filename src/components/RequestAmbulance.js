@@ -1,9 +1,16 @@
 import React from "react";
+import AmbulanceDriver from './AmbulanceDriver';
+import AmbulanceService from './AmbulanceService';
+import Footer from "./Footer";
+import FAQs from './FAQs';
 import "../style/RequestAmbulance.css"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const RequestAmbulance = () => {
   return (
-    <div className="container1">
+    <>
+    <div className="ambu-container">
       <div className="content">
         <h1>Request an Ambulance Cab</h1>
         <p>Quick and reliable ambulance service for your health emergencies.</p>
@@ -26,6 +33,11 @@ const RequestAmbulance = () => {
         />
       </div>
     </div>
+     <AmbulanceService/>
+     <AmbulanceDriver/>
+     <FAQs/>
+     <Footer />
+     </>
   );
 };
 

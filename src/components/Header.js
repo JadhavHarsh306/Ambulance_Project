@@ -1,51 +1,29 @@
-import React, { useState } from 'react';
+// Header.js
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../style/Header.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import Login from './Login';
-import Register from './Register';
 
 const Header = () => {
-    const [isPopupOpen,setIsPopupOpen]=useState(false);
-    const [reg,setreg]=useState(false);
-    const OpenPopup=(event)=>{
-        event.preventDefault();
-        setIsPopupOpen(true);
-    };
-    const closePopup=()=>{
-        setIsPopupOpen(false);
-    }
-
-    const RegisterOpen=(event)=>{
-        event.preventDefault();
-        setreg(true);
-    }
-    const not=()=>{
-        setreg(false);
-    }
     return (
         <header className="header1">
-            <img
+           <Link to="/"> <img
                 alt="RED.Health Logo"
                 height="50"
                 src=".\images\icon.jpeg"
                 width="70"
-            />
+            /></Link>
             <nav className="nav">
                 <h2>Ambulance Cab Service</h2>
-                <a href="#" className="nav-link">ABOUT US</a>
-                <a href="#" className="nav-link">HELP</a>
-                <a href="login" className="nav-link" onClick={OpenPopup}>LOG IN</a>
-                <Login isOpen={isPopupOpen} closePopup={closePopup}/>
-                <a href="#" className="nav-link" onClick={RegisterOpen}>SIGN UP</a>
-                <Register isActive={reg} notActive={not}/>
-                <a className="cta-button" href="#">
+                <Link to="/aboutus" className="nav-link">ABOUT US</Link>
+                <Link to="/login" className="nav-link">LOG IN</Link> {/* Link to Login */}
+                <Link to="/register" className="nav-link">SIGN UP</Link> {/* Link to Register */}
+                <Link className="cta-button" to="/">
                     <i className="fas fa-ambulance"></i>
                     BOOK AN AMBULANCE
-                </a>
+                </Link>
             </nav>
         </header>
     );
 };
 
 export default Header;
-

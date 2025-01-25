@@ -1,93 +1,76 @@
-/* Popup overlay */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
+.lg-container {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure the popup is above all content */
-}
-
-/* Login form container inside the popup */
-.login-container {
-  width: 300px;
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  text-align: center;
 }
 
-.login-container h2 {
-  margin-bottom: 20px;
+.login-container .left {
+  flex: 1;
+  background: url('https://placehold.co/400x400') no-repeat center center/cover;
+  border-radius: 10px 0 0 10px;
 }
 
-/* Input fields inside the form */
-.input-group {
-  margin-bottom: 20px;
+.login-container .right {
+  flex: 1;
+  padding: 40px;
 }
 
-.input-group label {
-  display: block;
-  margin-bottom: 10px;
+.login-container .right h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.input-group input {
-  width: 100%;
-  height: 40px;
+.login-container .right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container .right form input {
+  margin-bottom: 15px;
   padding: 10px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-/* Forgot password and register-like links */
-.forgot-password {
-  margin-bottom: 20px;
+.login-container .right form .forgot-password {
   text-align: right;
+  margin-bottom: 20px;
 }
 
-.forgot-password a {
-  color: #337ab7;
+.login-container .right form .forgot-password a {
   text-decoration: none;
+  color: #00aaff;
 }
 
-.forgot-password a:hover {
-  color: #23527c;
-}
-
-.register-link {
-  text-align: center;
-}
-
-.register-link p {
-  margin-bottom: 10px;
-}
-
-.register-link a {
-  color: #337ab7;
-  text-decoration: none;
-}
-
-.register-link a:hover {
-  color: #23527c;
-}
-
-/* Close button */
-.btn {
-  padding: 8px 16px;
-  background-color: #f44336; /* Red background for the close button */
+.login-container .right form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #00aaff;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
-.btn:hover {
-  background-color: #d32f2f;
+.login-container .right .signup {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-container .right .signup a {
+  text-decoration: none;
+  color: #00aaff;
 }

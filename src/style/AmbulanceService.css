@@ -1,4 +1,4 @@
-/* Container and overall page styling */
+
 .container {
     padding: 40px;
   }
@@ -69,15 +69,4 @@
     background: #444; /* Button hover effect */
   }
   
-  /* Responsive styles for mobile */
-  @media (max-width: 768px) {
-    .card {
-      width: 100%;
-      margin-bottom: 15px; /* Reduced margin for mobile */
-    }
-  
-    .card-container {
-      justify-content: center; /* Center cards on mobile */
-    }
-  }
   
