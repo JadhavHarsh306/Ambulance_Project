@@ -18,7 +18,7 @@ const AmbulanceService = () => {
           <div className="card-content">
             <h3>Emergency Response</h3>
             <p>Get immediate assistance with our emergency response service, available 24/7.</p>
-            <button>Request emergency response</button>
+           <a href='#req'> <button> Request emergency response</button></a>
           </div>
         </div>
         <div className="card">
@@ -31,7 +31,7 @@ const AmbulanceService = () => {
           <div className="card-content">
             <h3>Hospital Transfers</h3>
             <p>Schedule a transfer to and from hospitals with our reliable ambulance service.</p>
-            <button>Schedule hospital transfer</button>
+            <button onClick={() => alert("This is a future scope functionality")}>Schedule hospital transfer</button>
           </div>
         </div>
         <div className="card">
@@ -44,7 +44,7 @@ const AmbulanceService = () => {
           <div className="card-content">
             <h3>City Coverage</h3>
             <p>Our service is available in multiple cities, ensuring you get help wherever you are.</p>
-            <button>Check city coverage</button>
+            <button onClick={() => alert("Currently available in Pune region")}>Check city coverage</button>
           </div>
         </div>
       </div>

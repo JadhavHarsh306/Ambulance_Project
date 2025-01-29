@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Login.css'; // Assuming you will create a separate CSS file for styles
+import '../style/Login.css'; 
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -22,7 +22,7 @@ const Login = () => {
                         <div className="forgot-password">
                             <a href="#">Forgot password?</a>
                         </div>
-                        <button type="submit">Log In</button>
+                        <Link to="/ride"><button type="submit">Log In</button></Link>
                     </form>
                     <div className="signup">
                         Don't have an account? <Link to="/register"> <a>Signup</a> </Link>
